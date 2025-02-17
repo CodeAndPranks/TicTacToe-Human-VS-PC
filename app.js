@@ -1,6 +1,3 @@
-//wrap  code in a function.NOT !
-//function() {
-/*
     // Mouse table function to avoid problems or name conflicts
     const mousetable = Array.from(document.getElementsByClassName('box'));
     
@@ -21,7 +18,7 @@
         this.classList.remove('boxHuman');
         console.log('mouseout', 'mouseinn');
     }
-*/
+
     // Get the table to play on (array)
     const table = Array.from(document.querySelectorAll('.box'));
 
