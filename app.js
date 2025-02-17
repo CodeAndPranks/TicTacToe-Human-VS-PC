@@ -1,24 +1,31 @@
-//wrap  code in a function.NOT !
-//function() {
     // Mouse table function to avoid problems or name conflicts
     const mousetable = Array.from(document.getElementsByClassName('box'));
     
     // MouseOver & mouseOut for all spots
     mousetable.forEach(box => {
         box.addEventListener('mouseover', myfunction1);
+         box.addEventListener('touchstart',myfunction2)
     });
     
-    function myfunction1() {
+    function myfunction1 () {
+        this.classList.add('boxHuman');
+    }
+        function myfunction2() {
         this.classList.add('boxHuman');
     }
     
     mousetable.forEach(box => {
-        box.addEventListener('mouseout', myfunction2);
+        box.addEventListener('mouseout', myfunction3);
+         box.addEventListener('touchstart',myfunction4);
     });
     
-    function myfunction2() {
+    function myfunction3() {
         this.classList.remove('boxHuman');
-        console.log('mouseout', 'mouseinn');
+        console.log( 'mouseout3');
+        }
+         function myfunction4() {
+        this.classList.remove('boxHuman');
+        console.log('mouseout4');
     }
 // Get the table to play on (array)
 const table = Array.from(document.querySelectorAll('.box'));
