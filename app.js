@@ -1,32 +1,28 @@
     // Mouse table function for hover effect here reduce problems like name conflicts.
-    const mousetable = Array.from(document.getElementsByClassName('box'));
-    
-    // MouseOver & touchstart for all spots.Also Touthstart for iphone.pad e.g.
-    mousetable.forEach(box => {
-        box.addEventListener('mouseover', myfunction1);
-         box.addEventListener('touchstart',myfunction2)
-    });
-    //add and remove boxHuman when hover over the boxes for bout mouse and touch devices.
-    function myfunction1 () {
-        this.classList.add('boxHuman');
+const mousetable = Array.from(document.getElementsByClassName('box'));
+
+// MouseOver & mouseOut for all spots
+mousetable.forEach(box => {
+    box.addEventListener('mouseover', myfunction1);
+    box.addEventListener('mouseout', myfunction2); 
+});
+
+// Set the background image on mouseover
+function myfunction1() {
+    if (!this.classList.contains('boxComputer')) { 
+        this.style.backgroundColor = '#FFA000'; //  boxHuman color
+        this.style.backgroundImage = "url('img/o.svg')"; // boxHuman-image
+
     }
-        function myfunction2() {
-        this.classList.add('boxHuman');
+}
+
+// Function mouseout
+function myfunction2() { 
+    if (!this.classList.contains('boxComputer')) { 
+        this.style.backgroundColor = ''; 
+        this.style.backgroundImage = ''; 
     }
-     // mouseOut and toutcend to reset to deafult.
-   mousetable.forEach(box => {
-        box.addEventListener('mouseout', myfunction3);
-         box.addEventListener('touchstart',myfunction4);
-    });
-    
-    function myfunction3() {
-        this.classList.remove('boxHuman');
-        console.log( 'mouseout3');
-        }
-         function myfunction4() {
-        this.classList.remove('boxHuman');
-        console.log('mouseout4');
-    }
+}
 // Get the table to play on (array)
 const table = Array.from(document.querySelectorAll('.box'));
 
@@ -47,10 +43,10 @@ const winnCombos = [
     [2, 4, 6]
 ];
 
-// Add Event listener to each box for both click and touchstart
+// Add Event listener to each box ,for click and touchstart
 table.forEach(box => {
     box.addEventListener('click', myfunction);
-    box.addEventListener('touchstart', myfunction); // Add touchstart event
+    box.addEventListener('touchstart', myfunction); // touchstart for toutc device  like iPhone and many tabs etc.
 });
 
 // GAME START
@@ -91,9 +87,9 @@ function myfunction(e) {
         return;
     }
 
-    // If it's the computer's turn, make the computer move
+    // If computer's turn, computer move
     if (currenP === 'x') {
-        setTimeout(computerMove, 300);  // Delay to simulate pc is thinking
+        setTimeout(computerMove, 300);  // Simulate pc think.
     }
 }
 
