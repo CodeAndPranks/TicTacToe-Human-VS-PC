@@ -1,7 +1,7 @@
-# TicTacToe-Human-VS-PC.<a id="up">
+# TicTacToe-Human-VS-PC.
 https://codeandpranks.github.io/TicTacToe-Human-VS-PC
 
-Video .
+Video 
 [Watch the video](https://github.com/CodeAndPranks/TicTacToe-Human-VS-PC/raw/main/ttt.mp4)
 
 My Second Tic,Tac,toe,a final code for the js challange:
@@ -10,4 +10,4 @@ phone,with a winn and draw alert,winning-array,hover-efect using mouseover/mouse
 https://codeandpranks.github.io/Tic-tac-toe-Human-Phone
 
 
-<p align="right">(<a href="#up">Up to top</a>)</p>
+
