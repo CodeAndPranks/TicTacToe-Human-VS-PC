@@ -1,12 +1,16 @@
-# TicTacToe-Human-VS-PC.
+# TicTacToe-Human-VS-PC.Resoult of a javaScript challange.
 https://codeandpranks.github.io/TicTacToe-Human-VS-PC
 
-Video 
-[Watch the video](https://github.com/CodeAndPranks/TicTacToe-Human-VS-PC/raw/main/ttt.mp4)
+"Make js file,don't touch CSS or html ! Bulid a tic,tac,toe vs Pc/
+phone,with winn and draw alert,a winning-array,hover-efect for human player with mouseover/mouseout,and a reset function.Google ok,GPT NOT!"
+Video of javaScript challange final result:
 
-My Second Tic,Tac,toe,a final code for the js challange:
-Use only the CSS and html files and bulid a tic,tac,toe vs Pc-
-phone,with a winn and draw alert,winning-array,hover-efect using mouseover/mouseot for human player,a reset function.Google ok,GPT NOT!
+[Video:my final resoult](https://github.com/CodeAndPranks/TicTacToe-Human-VS-PC/raw/main/ttt.mp4)
+
+My Second Tic,Tac,toe during the js challange based on thath above,so
+near indenical,but a few key function are difference,so 
+it stay until I got my sertificate.Yeah !
+
 https://codeandpranks.github.io/Tic-tac-toe-Human-Phone
 
 
