@@ -1,12 +1,13 @@
-# TicTacToe-Human-VS-PC Only work on Linux.
-Linux-version:
+# TicTacToe-Human-VS-PC.<a id="up">
 https://codeandpranks.github.io/TicTacToe-Human-VS-PC
 
-Video who show's  hover-effect working on Linux:
+Video .
 [Watch the video](https://github.com/CodeAndPranks/TicTacToe-Human-VS-PC/raw/main/ttt.mp4)
 
-ON:Linux kali 5.10.0-kali9-amd64 #1 SMP Debian 5.10.46-4kali1 (2021-08-09) x86_64 GNU/Linux
-
-Tic,Tac,Toe with hover/effect for all here :(Android,Windows,phone and Laptop's)
-
+My Second Tic,Tac,toe,a final code for the js challange:
+Use only the CSS and html files and bulid a tic,tac,toe vs Pc-
+phone,with a winn and draw alert,winning-array,hover-efect using mouseover/mouseot for human player,a reset function.Google ok,GPT NOT!
 https://codeandpranks.github.io/Tic-tac-toe-Human-Phone
+
+
+<p align="right">(<a href="#up">Up to top</a>)</p>
