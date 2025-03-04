@@ -1,20 +1,20 @@
-    // Mouse table function to avoid problems or name conflicts
+    // Mouse table function for hover effect here reduce problems like name conflicts.
     const mousetable = Array.from(document.getElementsByClassName('box'));
     
-    // MouseOver & mouseOut for all spots
+    // MouseOver & touchstart for all spots.Also Touthstart for iphone.pad e.g.
     mousetable.forEach(box => {
         box.addEventListener('mouseover', myfunction1);
          box.addEventListener('touchstart',myfunction2)
     });
-    
+    //add and remove boxHuman when hover over the boxes for bout mouse and touch devices.
     function myfunction1 () {
         this.classList.add('boxHuman');
     }
         function myfunction2() {
         this.classList.add('boxHuman');
     }
-    
-    mousetable.forEach(box => {
+     // mouseOut and toutcend to reset to deafult.
+   mousetable.forEach(box => {
         box.addEventListener('mouseout', myfunction3);
          box.addEventListener('touchstart',myfunction4);
     });
