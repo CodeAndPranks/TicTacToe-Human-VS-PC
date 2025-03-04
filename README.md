@@ -9,4 +9,4 @@ ON:Linux kali 5.10.0-kali9-amd64 #1 SMP Debian 5.10.46-4kali1 (2021-08-09) x86_6
 
 Tic,Tac,Toe with hover/effect for all here :(Android,Windows,phone and Laptop's)
 
-https://codeandpranks.github.io/Tic-Tac-Toe-Human-Phone
+https://codeandpranks.github.io/Tic-tac-toe-Human-Phone
