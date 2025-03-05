@@ -6,9 +6,9 @@ phone,with winn and draw alert,a winning-array,hover-efect for human player with
 
 ![Video:my final resoult](https://github.com/CodeAndPranks/TicTacToe-Human-VS-PC/raw/main/ttt.mp4)
 
-My first Tic,Tac,toe during the js challange based ,so
-near indenical,but a few key function are difference and
-it stay.Android phone show the hover as image after restart if try manually reset instad of window.location.reload().
+My first Tic,Tac,toe during the js challange based is based on my ttt develop,
+near indenical,but got a few key function difference so I lei it stay for now.
+Android phone show the hover image after restart if you manually reset instad of using window.location.reload()[Se script]
 https://codeandpranks.github.io/Tic-tac-toe-Human-Phone
 
 
