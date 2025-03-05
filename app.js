@@ -26,12 +26,10 @@ function myfunction2() {
 // Get the table to play on (array)
 const table = Array.from(document.querySelectorAll('.box'));
 
-// Text info for human Player(or/and publickum;)
-let infoTxt = document.querySelector('h1');
 let currenP = 'o'; // Player 'o' starts
 let movesPlayed = []; // to remove used fields
 
-// Possible Win combinations
+// Possible Winn combinations[row 1 to row 8]
 const winnCombos = [
     [0, 1, 2],
     [3, 4, 5],
