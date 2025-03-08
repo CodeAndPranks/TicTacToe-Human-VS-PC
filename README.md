@@ -10,10 +10,10 @@ My first Tic,Tac,toe during the js challange is based upon my ttt develop,so sim
 but got a few key functions difference and I let it stay for now.
 Android phone show hover image after restart() if "manually reset",not "window.location.reload()".Script:
 ```
-https://codeandpranks.github.io/Human-Phone
+https://codeandpranks.github.io/Tic-tac-toe-Human-Phone
 ```
 # demo-link :
-https://github.com/CodeAndPranks/TicTacToe-Human-Phone)
+https://github.com/CodeAndPranks/Tic-tac-toe-Human-Phone)
 
 
 
