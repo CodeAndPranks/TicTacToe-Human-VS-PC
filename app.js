@@ -27,7 +27,7 @@ function myfunction2() {
 const table = Array.from(document.querySelectorAll('.box'));
 
 let currenP = 'o'; // Player 'o' starts
-let movesPlayed = []; // to remove used fields
+let movesPlayed = []; // counter 
 
 // Possible Winn combinations[row 1 to row 8]
 const winnCombos = [
@@ -41,7 +41,7 @@ const winnCombos = [
     [2, 4, 6]
 ];
 
-// Add Event listener to each box ,for click and touchstart
+// Add Event listener to each box ,click and touchstart
 table.forEach(box => {
     box.addEventListener('click', myfunction);
     box.addEventListener('touchstart', myfunction); // touchstart for toutc device  like iPhone and many tabs etc.
@@ -49,7 +49,7 @@ table.forEach(box => {
 
 // GAME START
 function myfunction(e) {
-    e.preventDefault(); // Prevent default behavior for touch events
+    e.preventDefault(); // don't add classList by touch events,yet.
     // Need index of clicked box
     const boxArr = Array.from(document.getElementsByClassName('box'));
     const index = boxArr.indexOf(e.target);
@@ -91,7 +91,7 @@ function myfunction(e) {
     }
 }
 
-// Function to check the winner
+// Function to check the winner speak for itself.
 function checkWinner() {
     for (let combo of winnCombos) {
         const boxes = combo.map(index => table[index]);
@@ -105,15 +105,15 @@ function checkWinner() {
 
 // Function to make the computer's move
 function computerMove() {
-    // Find all the available spots (empty boxes)
+    // Find all empty boxes
     const availableMoves = table
         .map((box, index) => (box.classList.contains('boxHuman') || box.classList.contains('boxComputer')) ? null : index)
         .filter(index => index !== null);
 
-    // Randomly choose one available move for the computer
+    // Randomly choose available move for computer
     const move = availableMoves[Math.floor(Math.random() * availableMoves.length)];
 
-    // Simulate a click for the computer
+    // Simulate computer click 
     const event = new MouseEvent('click', {
         bubbles: true,
         cancelable: true,
